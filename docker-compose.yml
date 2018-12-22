@@ -13,7 +13,7 @@ services:
     image: elicocorp/odoo:10.0
     command: start
     ports:
-      - 127.0.0.1:8069:8069
+      - 8069:8069
     links:
       - postgres:db
     volumes:
