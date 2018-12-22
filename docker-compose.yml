@@ -16,7 +16,7 @@ services:
     deploy:
       replicas: 3
     volumes:
-      - odoo_data:/var/lib/odoo:rw,Z
+      - ./volumes/odoo:/var/lib/odoo:rw,Z
     environment:
       POSTGRES_USER: odoo
       POSTGRES_PASSWORD: odoopwd
